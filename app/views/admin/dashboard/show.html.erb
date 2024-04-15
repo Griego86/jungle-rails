@@ -1,0 +1,22 @@
+<h1 id="admin-dashboard-h1">Admin &raquo; Admin Dashboard</h1>
+<div class="admin-dashboard-badge">
+  <button type="button" class="btn btn-primary position-relative">
+    Total Products
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      <%= @products.count %>
+      <span class="visually-hidden">Total Products</span>
+    </span>
+  </button>
+  <div><%= link_to "View All Products here", [:admin, :products], class: 'admin-dashboard-link' %></div>
+</div>
+
+<div class="admin-dashboard-badge">
+  <button type="button" class="btn btn-primary position-relative">
+    Total Categories
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      <%= @categories.count %>
+      <span class="visually-hidden">Total Categories</span>
+    </span>
+  </button>
+  <div><%= link_to "View All Categories here", [:admin, :categories], class: 'admin-dashboard-link' %></div>
+</div>
